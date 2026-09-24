@@ -1,0 +1,65 @@
+/* ==========================================================================
+   Dizaino žetonai
+   Vienintelė vieta, kur apibrėžiamos spalvos, šriftai, tipografijos skalė,
+   tarpai ir kampų spindulys. Kiti CSS failai naudoja tik šiuos kintamuosius.
+   ========================================================================== */
+
+:root {
+  /* Spalvos: šilta popieriaus bazė, tamsus rašalas ir viena akcentinė
+     spalva – rąstinių namų stogų raudona. Jokių gradientų. */
+  --color-bg: #f5f3ee;
+  --color-surface: #ebe7de;
+  --color-ink: #1e221d;
+  --color-muted: #5a6058;
+  --color-line: #d6d0c3;
+  --color-accent: #a3402a;
+  --color-on-accent: #ffffff;
+
+  /* Šriftų pora: serifinis antraštėms, groteskas tekstui. */
+  --font-display: "Newsreader", Georgia, "Times New Roman", serif;
+  --font-body: "Public Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+
+  /* Tipografijos skalė – santykis 1.25 (didžioji tercija), bazė 17 px.
+     Kiekvienas teksto dydis svetainėje yra vienas iš šių žingsnių. */
+  --step--1: 0.85rem;
+  --step-0: 1.0625rem;
+  --step-1: 1.328rem;
+  --step-2: 1.66rem;
+  --step-3: 2.075rem;
+  --step-4: 2.594rem;
+  --step-5: 3.242rem;
+  --step-6: 4.053rem;
+
+  /* Tarpų skalė. Didelės reikšmės skirtos erdvei tarp sekcijų. */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 1rem;
+  --space-4: 1.5rem;
+  --space-5: 2rem;
+  --space-6: 3rem;
+  --space-7: 4.5rem;
+  --space-8: 7rem;
+
+  /* Vienas kampų spindulys visiems elementams. */
+  --radius: 4px;
+
+  /* Maksimalus teksto eilutės plotis – ne daugiau 70 simbolių. */
+  --measure: 70ch;
+
+  --container: 76rem;
+  --gutter: clamp(1rem, 4vw, 2.5rem);
+  --header-height: 4.5rem;
+}
+
+/* Mažuose ekranuose antraštės nusileidžia per du skalės žingsnius,
+   kad ilgi lietuviški žodžiai nelūžtų. */
+@media (max-width: 40rem) {
+  :root {
+    --step-6: 2.594rem;
+    --step-5: 2.075rem;
+    --step-4: 1.66rem;
+    --step-3: 1.5rem;
+    --space-8: 4.5rem;
+    --space-7: 3rem;
+  }
+}

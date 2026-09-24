@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Namai – Kazokinė</title>
+  <meta name="description" content="Trys rąstiniai namai ir lauko šašlykinė Kazokinės sodyboje: 35 miegamos vietos, pokylių salė, pirtis, kubilas ir židiniai.">
+  <meta name="theme-color" content="#f5f3ee">
+  <meta property="og:title" content="Namai – Kazokinė">
+  <meta property="og:image" content="assets/img/antras-namas/fasadas-pavasari.jpg">
+
+  <!-- JS klasė nustatoma iškart, kad be JS meniu ir galerija liktų veikiantys. -->
+  <script>document.documentElement.classList.add("js");</script>
+
+  <!-- Šriftai: Newsreader (antraštės) + Public Sans (tekstas) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500&family=Public+Sans:wght@400;500;600&display=swap">
+
+  <!-- Ikonos: Phosphor (regular) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css">
+
+  <!-- Stiliai: žetonai → bazė → išdėstymas → komponentai -->
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+
+  <script src="js/nav.js" defer></script>
+  <script src="js/lightbox.js" defer></script>
+</head>
+<body>
+<a class="visually-hidden" href="#turinys">Pereiti prie turinio</a>
+
+<!-- ============ ANTRAŠTĖ (vienoda visuose puslapiuose) ============ -->
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a class="logo" href="index.html">Kazokinė</a>
+
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="pagrindinis-meniu">
+      <i class="ph ph-list" aria-hidden="true"></i> Meniu
+    </button>
+
+    <nav class="site-nav" id="pagrindinis-meniu" aria-label="Pagrindinis meniu">
+      <ul>
+        <li><a href="index.html">Apie sodybą</a></li>
+        <li><a href="namai.html" aria-current="page">Namai</a></li>
+        <li><a href="galerija.html">Galerija</a></li>
+        <li><a href="kontaktai.html">Kontaktai</a></li>
+      </ul>
+      <a class="site-nav__phone" href="tel:+37061515332">
+        <i class="ph ph-phone" aria-hidden="true"></i> +370 615 15332
+      </a>
+    </nav>
+  </div>
+</header>
+
+<main id="turinys">
+
+  <!-- ============ ĮŽANGA + VIDINĖ NAVIGACIJA ============ -->
+  <section class="page-intro">
+    <div class="container stack--lg">
+      <span class="eyebrow">Namai</span>
+      <h1>Trys namai ir lauko šašlykinė</h1>
+      <p>
+        Kiekvienas namas turi savo židinį, virtuvę, WC ir terasą. Namus
+        galima nuomoti atskirai arba visą sodybą kartu – iki 35 svečių.
+      </p>
+      <ul class="jump-nav" role="list">
+        <li><a href="#pirmas-namas">Pirmasis namas</a></li>
+        <li><a href="#antras-namas">Antrasis namas</a></li>
+        <li><a href="#pirties-namas">Pirties namas</a></li>
+        <li><a href="#saslykine">Lauko šašlykinė</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ PIRMASIS NAMAS ============ -->
+  <section class="section" id="pirmas-namas">
+    <div class="container house">
+      <div class="house__head">
+        <div class="stack--lg">
+          <span class="eyebrow">01</span>
+          <h2>Pirmasis namas</h2>
+          <ul class="house__meta" role="list">
+            <li class="tag"><i class="ph ph-bed" aria-hidden="true"></i> 14 miegamų vietų</li>
+            <li class="tag"><i class="ph ph-toilet" aria-hidden="true"></i> 2 WC ir dušas</li>
+          </ul>
+        </div>
+        <div class="stack--lg">
+          <p>
+            Didžiausias sodybos namas su pokylių sale, kurioje telpa visa
+            šventės kompanija prie vieno stalo.
+          </p>
+          <ul class="checklist" role="list">
+            <li><i class="ph ph-check" aria-hidden="true"></i> Pokylių salė su ilgu stalu</li>
+            <li><i class="ph ph-check" aria-hidden="true"></i> Židinio erdvė ir atskira poilsio erdvė</li>
+            <li><i class="ph ph-check" aria-hidden="true"></i> Virtuvė, 2 WC kambariai, dušas</li>
+            <li><i class="ph ph-check" aria-hidden="true"></i> Erdvi lauko terasa</li>
+          </ul>
+        </div>
+      </div>
+      <div class="photo-grid" data-gallery>
+        <figure class="photo is-feature">
+          <a href="assets/img/pirmas-namas/fasadas-pavasari.jpg" data-lightbox><img src="assets/img/pirmas-namas/fasadas-pavasari.jpg" alt="Pirmasis namas pro žydinčias obelis" width="800" height="532" loading="lazy" decoding="async"></a>
+        </figure>
+        <figure class="photo">
+          <a href="assets/img/pirmas-namas/pokyliu-sale.jpg" data-lightbox><img src="assets/img/pirmas-namas/pokyliu-sale.jpg" alt="Pokylių salė su ilgu stalu" width="800" height="532" loading="lazy" decoding="async"></a>
+        </figure>
+        <figure class="photo is-tall">
+          <a href="assets/img/pirmas-namas/laiptai.jpg" data-lightbox><img src="assets/img/pirmas-namas/laiptai.jpg" alt="Mediniai laiptai į antrą aukštą" width="532" height="800" loading="lazy" decoding="async"></a>
+        </figure>
+        <figure class="photo">
+          <a href="assets/img/pirmas-namas/svetaine.jpg" data-lightbox><img src="assets/img/pirmas-namas/svetaine.jpg" alt="Poilsio erdvė su sofomis ir apvaliu staliuku" width="800" height="532" loading="lazy" decoding="async"></a>
+        </figure>
+        <figure class="photo is-tall">
+          <a href="assets/img/pirmas-namas/zidinys.jpg" data-lightbox><img src="assets/img/pirmas-namas/zidinys.jpg" alt="Akmeninis židinys" width="532" height="800" loading="lazy" decoding="async"></a>
+        </figure>
+        <figure class="photo is-wide">
+          <a href="assets/img/pirmas-namas/svetaine-zidinys.jpg" data-lightbox><img src="assets/img/pirmas-namas/svetaine-zidinys.jpg" alt="Židinio erdvė su minkštasuoliais" width="800" height="532" loading="lazy" decoding="async"></a>
+        </figure>
+        <figure class="photo is-tall">
+          <a href="assets/img/pirmas-namas/pokyliu-sale-2.jpg" data-lightbox><img src="assets/img/pirmas-namas/pokyliu-sale-2.jpg" alt="Pokylių salės stalas visu ilgiu" width="532" height="800" loading="lazy" decoding="async"></a>
+        </figure>
+        <figure class="photo">
+          <a href="assets/img/pirmas-namas/pokyliu-sale-3.jpg" data-lightbox><img src="assets/img/pirmas-namas/pokyliu-sale-3.jpg" alt="Pokylių salė su minkštomis kėdėmis" width="800" height="532" loading="lazy" decoding="async"></a>
+        </figure>
+        <figure class="photo is-wide">
+          <a href="assets/img/pirmas-namas/fasadas-sonas.jpg" data-lightbox><img src="assets/img/pirmas-namas/fasadas-sonas.jpg" alt="Pirmasis namas iš šono, rąstinės sienos ir raudonas stogas" width="800" height="532" loading="lazy" decoding="async"></a>
+        </figure>
+        <figure class="photo">
+          <a href="assets/img/pirmas-namas/miegamasis-1.jpg" data-lightbox><img src="assets/img/pirmas-namas/miegamasis-1.jpg" alt="Miegamasis su trimis viengulėmis lovomis" width="800" height="532" loading="lazy" decoding="async"></a>
+        </figure>
+        <figure class="photo">
+          <a href="assets/img/pirmas-namas/miegamasis-2.jpg" data-lightbox><img src="assets/img/pirmas-namas/miegamasis-2.jpg" alt="Palėpės miegamasis su lovomis ir kėdėmis" width="800" height="532" loading="lazy" decoding="async"></a>
+        </figure>
+        <figure class="photo is-tall">
+          <a href="assets/img/pirmas-namas/miegamasis-4.jpg" data-lightbox><img src="assets/img/pirmas-namas/miegamasis-4.jpg" alt="Palėpės miegamasis su nuožulniomis lubomis" width="532" height="800" loading="lazy" decoding="async"></a>
+        </figure>
+        <figure class="photo">
+          <a href="assets/img/pirmas-namas/miegamasis-3.jpg" data-lightbox><img src="assets/img/pirmas-namas/miegamasis-3.jpg" alt="Miegamasis su dvigule lova" width="800" height="532" loading="lazy" decoding="async"></a>
+        </figure>
+        <figure class="photo is-wide">
+          <a href="assets/img/pirmas-namas/poilsio-kampelis.jpg" data-lightbox><img src="assets/img/pirmas-namas/poilsio-kampelis.jpg" alt="Du krėslai prie stoglangio" width="800" height="532" loading="lazy" decoding="async"></a>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ANTRASIS NAMAS ============ -->
+  <section class="section" id="antras-namas">
+    <div class="container house">
+      <div class="house__head">
+        <div class="stack--lg">
+          <span class="eyebrow">02</span>
+          <h2>Antrasis namas</h2>
+          <ul class="house__meta" role="list">
+            <li class="tag"><i class="ph ph-bed" aria-hidden="true"></i> 11 miegamų vietų</li>
+            <li class="tag"><i class="ph ph-toilet" aria-hidden="true"></i> 2 WC ir dušas</li>
+          </ul>
+        </div>
+        <div class="stack--lg">
+          <p>
+            Aukšta svetainė su antresole, vitražiniu langu ir koklinio
+            židinio kampu – jaukiausias namas ramiam savaitgaliui.
+          </p>
+          <ul class="checklist" role="list">
+            <li><i class="ph ph-check" aria-hidden="true"></i> Jauki svetainės erdvė</li>
+            <li><i class="ph ph-check" aria-hidden="true"></i> Uždara poilsio erdvė su židiniu</li>
+            <li><i class="ph ph-check" aria-hidden="true"></i> Virtuvė, 2 WC kambariai, dušas</li>
+            <li><i class="ph ph-check" aria-hidden="true"></i> Stiklinė veranda ir lauko terasa</li>
+          </ul>
+        </div>
+      </div>
+      <div class="photo-grid" data-gallery>
+        <figure class="photo is-feature">
+          <a href="assets/img/antras-namas/fasadas-pavasari.jpg" data-lightbox><img src="assets/img/antras-namas/fasadas-pavasari.jpg" alt="Antrasis namas pro žydinčias obelis" width="800" height="532" loading="lazy" decoding="async"></a>
+        </figure>
+        <figure class="photo">
+          <a href="assets/img/antras-namas/svetaine.jpg" data-lightbox><img src="assets/img/antras-namas/svetaine.jpg" alt="Svetainė iš antresolės: valgomojo stalas ir sofos" width="800" height="532" loading="lazy" decoding="async"></a>
+        </figure>
+        <figure class="photo is-tall">
+          <a href="assets/img/antras-namas/svetaine-antresole.jpg" data-lightbox><img src="assets/img/antras-namas/svetaine-antresole.jpg" alt="Aukšta svetainė su vitražiniu langu" width="532" height="800" loading="lazy" decoding="async"></a>
+        </figure>
+        <figure class="photo">
+          <a href="assets/img/antras-namas/zidinys.jpg" data-lightbox><img src="assets/img/antras-namas/zidinys.jpg" alt="Koklinis židinys ir pinti krėslai" width="800" height="532" loading="lazy" decoding="async"></a>
+        </figure>
+        <figure class="photo is-tall">
+          <a href="assets/img/antras-namas/poilsio-erdve.jpg" data-lightbox><img src="assets/img/antras-namas/poilsio-erdve.jpg" alt="Uždara poilsio erdvė su sofa" width="532" height="800" loading="lazy" decoding="async"></a>
+        </figure>
+        <figure class="photo">
+          <a href="assets/img/antras-namas/virtuve.jpg" data-lightbox><img src="assets/img/antras-namas/virtuve.jpg" alt="Virtuvė su baro stalu" width="800" height="532" loading="lazy" decoding="async"></a>
+        </figure>
+        <figure class="photo is-tall">
+          <a href="assets/img/antras-namas/terasa.jpg" data-lightbox><img src="assets/img/antras-namas/terasa.jpg" alt="Lauko terasa su stalu ir kėdėmis" width="532" height="800" loading="lazy" decoding="async"></a>
+        </figure>
+        <figure class="photo is-tall">
+          <a href="assets/img/antras-namas/antresole.jpg" data-lightbox><img src="assets/img/antras-namas/antresole.jpg" alt="Antresolė virš svetainės" width="532" height="800" loading="lazy" decoding="async"></a>
+        </figure>
+        <figure class="photo is-wide">
+          <a href="assets/img/antras-namas/poilsio-kampelis.jpg" data-lightbox><img src="assets/img/antras-namas/poilsio-kampelis.jpg" alt="Minkštas kampas su gėlėmis" width="800" height="532" loading="lazy" decoding="async"></a>
+        </figure>
+        <figure class="photo is-tall">
+          <a href="assets/img/antras-namas/antresole-2.jpg" data-lightbox><img src="assets/img/antras-namas/antresole-2.jpg" alt="Svetainė su medinėmis lubomis ir antresole" width="532" height="800" loading="lazy" decoding="async"></a>
+        </figure>
+        <figure class="photo">
+          <a href="assets/img/antras-namas/interjeras.jpg" data-lightbox><img src="assets/img/antras-namas/interjeras.jpg" alt="Elnio ragai ant medinės sienos" width="800" height="532" loading="lazy" decoding="async"></a>
+        </figure>
+        <figure class="photo">
+          <a href="assets/img/antras-namas/miegamasis-2.jpg" data-lightbox><img src="assets/img/antras-namas/miegamasis-2.jpg" alt="Miegamasis po nuožulniomis lubomis" width="800" height="532" loading="lazy" decoding="async"></a>
+        </figure>
+        <figure class="photo is-tall">
+          <a href="assets/img/antras-namas/miegamasis-1.jpg" data-lightbox><img src="assets/img/antras-namas/miegamasis-1.jpg" alt="Palėpės miegamasis su viengule lova" width="532" height="800" loading="lazy" decoding="async"></a>
+        </figure>
+        <figure class="photo">
+          <a href="assets/img/antras-namas/miegamasis-3.jpg" data-lightbox><img src="assets/img/antras-namas/miegamasis-3.jpg" alt="Miegamasis su keliomis lovomis" width="800" height="532" loading="lazy" decoding="async"></a>
+        </figure>
+        <figure class="photo is-tall">
+          <a href="assets/img/antras-namas/vonios-kambarys.jpg" data-lightbox><img src="assets/img/antras-namas/vonios-kambarys.jpg" alt="Vonios kambarys su skalbimo mašina" width="532" height="800" loading="lazy" decoding="async"></a>
+        </figure>
+        <figure class="photo">
+          <a href="assets/img/antras-namas/veranda.jpg" data-lightbox><img src="assets/img/antras-namas/veranda.jpg" alt="Stiklinė veranda su mediniais baldais" width="800" height="532" loading="lazy" decoding="async"></a>
+        </figure>
+        <figure class="photo">
+          <a href="assets/img/antras-namas/valgomasis.jpg" data-lightbox><img src="assets/img/antras-namas/valgomasis.jpg" alt="Valgomasis su ąžuoliniu stalu" width="800" height="532" loading="lazy" decoding="async"></a>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PIRTIES NAMAS ============ -->
+  <section class="section" id="pirties-namas">
+    <div class="container house">
+      <div class="house__head">
+        <div class="stack--lg">
+          <span class="eyebrow">03</span>
+          <h2>Pirties namas</h2>
+          <ul class="house__meta" role="list">
+            <li class="tag"><i class="ph ph-bed" aria-hidden="true"></i> 10 miegamų vietų</li>
+            <li class="tag"><i class="ph ph-bathtub" aria-hidden="true"></i> Kubilas</li>
+          </ul>
+        </div>
+        <div class="stack--lg">
+          <p>
+            Namas pačiame upės krante. Laiptai veda tiesiai į Verseką –
+            geriausias būdas atsigaivinti po karštos pirties.
+          </p>
+          <ul class="checklist" role="list">
+            <li><i class="ph ph-check" aria-hidden="true"></i> Pirtis ir priepirčio erdvė</li>
+            <li><i class="ph ph-check" aria-hidden="true"></i> Erdvi terasa</li>
+            <li><i class="ph ph-check" aria-hidden="true"></i> Kubilas su atskira poilsio zona</li>
+            <li><i class="ph ph-check" aria-hidden="true"></i> Laiptai ir lieptas į upę</li>
+          </ul>
+        </div>
+      </div>
+      <div class="photo-grid" data-gallery>
+        <figure class="photo is-feature">
+          <a href="assets/img/pirties-namas/veranda.jpg" data-lightbox><img src="assets/img/pirties-namas/veranda.jpg" alt="Pirties namo veranda ir valtis" width="800" height="532" loading="lazy" decoding="async"></a>
+        </figure>
+        <figure class="photo">
+          <a href="assets/img/pirties-namas/kubilas.jpg" data-lightbox><img src="assets/img/pirties-namas/kubilas.jpg" alt="Kubilas su terasa ant upės šlaito" width="800" height="532" loading="lazy" decoding="async"></a>
+        </figure>
+        <figure class="photo">
+          <a href="assets/img/pirties-namas/laiptai-i-upe.jpg" data-lightbox><img src="assets/img/pirties-namas/laiptai-i-upe.jpg" alt="Laiptai nuo pirties namo link upės" width="800" height="532" loading="lazy" decoding="async"></a>
+        </figure>
+        <figure class="photo">
+          <a href="assets/img/pirties-namas/priepirtis.jpg" data-lightbox><img src="assets/img/pirties-namas/priepirtis.jpg" alt="Priepirtis su mediniu stalu ir suolais" width="800" height="532" loading="lazy" decoding="async"></a>
+        </figure>
+        <figure class="photo">
+          <a href="assets/img/pirties-namas/namas-ir-kubilas.jpg" data-lightbox><img src="assets/img/pirties-namas/namas-ir-kubilas.jpg" alt="Pirties namas ir kubilo terasa" width="800" height="532" loading="lazy" decoding="async"></a>
+        </figure>
+        <figure class="photo">
+          <a href="assets/img/pirties-namas/upe.jpg" data-lightbox><img src="assets/img/pirties-namas/upe.jpg" alt="Verseka ir lieptas prie pirties" width="800" height="532" loading="lazy" decoding="async"></a>
+        </figure>
+        <figure class="photo">
+          <a href="assets/img/pirties-namas/lieptas.jpg" data-lightbox><img src="assets/img/pirties-namas/lieptas.jpg" alt="Lieptas ir debesų atspindžiai upėje" width="800" height="532" loading="lazy" decoding="async"></a>
+        </figure>
+        <figure class="photo">
+          <a href="assets/img/pirties-namas/namas-po-medziais.jpg" data-lightbox><img src="assets/img/pirties-namas/namas-po-medziais.jpg" alt="Pirties namas po žydinčiu medžiu" width="800" height="532" loading="lazy" decoding="async"></a>
+        </figure>
+        <figure class="photo">
+          <a href="assets/img/pirties-namas/supynes.jpg" data-lightbox><img src="assets/img/pirties-namas/supynes.jpg" alt="Medinės sūpynės prie pirties" width="800" height="532" loading="lazy" decoding="async"></a>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ LAUKO ŠAŠLYKINĖ ============ -->
+  <section class="section" id="saslykine">
+    <div class="container house">
+      <div class="house__head">
+        <div class="stack--lg">
+          <span class="eyebrow">04</span>
+          <h2>Lauko šašlykinė</h2>
+          <ul class="house__meta" role="list">
+            <li class="tag"><i class="ph ph-users-three" aria-hidden="true"></i> Pokyliams</li>
+            <li class="tag"><i class="ph ph-drop" aria-hidden="true"></i> Vandentiekis</li>
+          </ul>
+        </div>
+        <div class="stack--lg">
+          <p>
+            Įstiklintas pastatas ramiam vakarui su šeima ir draugais. Tikra
+            mūryta krosnis ir židinys, o gaminimo zonoje yra vandentiekis.
+          </p>
+          <ul class="checklist" role="list">
+            <li><i class="ph ph-check" aria-hidden="true"></i> Pokylio erdvė su ilgais stalais</li>
+            <li><i class="ph ph-check" aria-hidden="true"></i> Poilsio ir baro zonos</li>
+            <li><i class="ph ph-check" aria-hidden="true"></i> Mūryta krosnis ir židinys</li>
+            <li><i class="ph ph-check" aria-hidden="true"></i> Gaminimo zona su vandentiekiu</li>
+          </ul>
+        </div>
+      </div>
+      <div class="photo-grid" data-gallery>
+        <figure class="photo is-feature">
+          <a href="assets/img/saslykine/gaminimo-zona.jpg" data-lightbox><img src="assets/img/saslykine/gaminimo-zona.jpg" alt="Šašlykinės gaminimo zona su mūryta krosnimi" width="800" height="532" loading="lazy" decoding="async"></a>
+        </figure>
+        <figure class="photo is-wide">
+          <a href="assets/img/saslykine/pastatas.jpg" data-lightbox><img src="assets/img/saslykine/pastatas.jpg" alt="Stiklinė lauko šašlykinė" width="800" height="532" loading="lazy" decoding="async"></a>
+        </figure>
+        <figure class="photo is-tall">
+          <a href="assets/img/saslykine/baras.jpg" data-lightbox><img src="assets/img/saslykine/baras.jpg" alt="Baro kėdės prie medinio prekystalio" width="532" height="800" loading="lazy" decoding="async"></a>
+        </figure>
+        <figure class="photo">
+          <a href="assets/img/saslykine/iejimas.jpg" data-lightbox><img src="assets/img/saslykine/iejimas.jpg" alt="Šašlykinės įėjimas su užrašu Kazokinė" width="800" height="532" loading="lazy" decoding="async"></a>
+        </figure>
+        <figure class="photo">
+          <a href="assets/img/saslykine/krosnis.jpg" data-lightbox><img src="assets/img/saslykine/krosnis.jpg" alt="Mūryta krosnis ir židinys" width="800" height="532" loading="lazy" decoding="async"></a>
+        </figure>
+        <figure class="photo is-tall">
+          <a href="assets/img/saslykine/ilgas-stalas.jpg" data-lightbox><img src="assets/img/saslykine/ilgas-stalas.jpg" alt="Ilgas medinis pokylio stalas" width="532" height="800" loading="lazy" decoding="async"></a>
+        </figure>
+        <figure class="photo">
+          <a href="assets/img/saslykine/duonkepe.jpg" data-lightbox><img src="assets/img/saslykine/duonkepe.jpg" alt="Mūryta arka su puodeliais" width="800" height="532" loading="lazy" decoding="async"></a>
+        </figure>
+        <figure class="photo">
+          <a href="assets/img/saslykine/virtuve.jpg" data-lightbox><img src="assets/img/saslykine/virtuve.jpg" alt="Gaminimo zona su krosnimi ir baro stalu" width="800" height="532" loading="lazy" decoding="async"></a>
+        </figure>
+        <figure class="photo is-tall">
+          <a href="assets/img/saslykine/baro-stalas.jpg" data-lightbox><img src="assets/img/saslykine/baro-stalas.jpg" alt="Apvalus baro stalas" width="532" height="800" loading="lazy" decoding="async"></a>
+        </figure>
+        <figure class="photo">
+          <a href="assets/img/saslykine/krosnis-2.jpg" data-lightbox><img src="assets/img/saslykine/krosnis-2.jpg" alt="Krosnis ir apvalus stalas" width="800" height="532" loading="lazy" decoding="async"></a>
+        </figure>
+        <figure class="photo is-wide">
+          <a href="assets/img/saslykine/poilsio-zona.jpg" data-lightbox><img src="assets/img/saslykine/poilsio-zona.jpg" alt="Poilsio zona su sofa ir komoda" width="800" height="532" loading="lazy" decoding="async"></a>
+        </figure>
+        <figure class="photo">
+          <a href="assets/img/saslykine/pokyliu-stalai.jpg" data-lightbox><img src="assets/img/saslykine/pokyliu-stalai.jpg" alt="Pokylio stalai ir suolai" width="800" height="532" loading="lazy" decoding="async"></a>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ KVIETIMAS SUSISIEKTI ============ -->
+  <section class="section section--surface">
+    <div class="container cta">
+      <div class="stack--lg">
+        <span class="eyebrow">Rezervacija</span>
+        <h2>Išsirinkote namą?</h2>
+        <p>Paskambinkite ir pasitikslinkite laisvas datas bei kainą.</p>
+      </div>
+      <div class="actions">
+        <a class="btn btn--solid" href="tel:+37061515332">
+          <i class="ph ph-phone" aria-hidden="true"></i> +370 615 15332
+        </a>
+        <a class="btn btn--line" href="kontaktai.html">Visi kontaktai</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ PORAŠTĖ (vienoda visuose puslapiuose) ============ -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="site-footer__grid">
+      <div class="stack">
+        <a class="logo" href="index.html">Kazokinė</a>
+        <p>
+          Kaimo turizmo sodyba ant Versekos upės kranto, kraštovaizdžio
+          draustinyje. 55 km nuo Vilniaus.
+        </p>
+      </div>
+      <div>
+        <h2>Puslapiai</h2>
+        <ul>
+          <li><a href="index.html">Apie sodybą</a></li>
+          <li><a href="namai.html">Namai</a></li>
+          <li><a href="galerija.html">Galerija</a></li>
+          <li><a href="kontaktai.html">Kontaktai</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Susisiekite</h2>
+        <ul>
+          <li><a href="tel:+37061515332">+370 615 15332</a></li>
+          <li><a href="mailto:info@kazokine.lt">info@kazokine.lt</a></li>
+          <li>Butvydonių k., Varėnos r.</li>
+        </ul>
+      </div>
+    </div>
+    <p class="site-footer__bottom">© 2026 Kazokinė – kaimo turizmo sodyba</p>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kontaktai – Kazokinė</title>
+  <meta name="description" content="Sodyba Kazokinė, Butvydonių k., Matuizų sen., Varėnos r. Tel. +370 615 15332, info@kazokine.lt. Koordinatės 54.271116, 24.815879.">
+  <meta name="theme-color" content="#f5f3ee">
+  <meta property="og:title" content="Kontaktai – Kazokinė">
+  <meta property="og:image" content="assets/img/antras-namas/fasadas-pavasari.jpg">
+
+  <!-- JS klasė nustatoma iškart, kad be JS meniu ir galerija liktų veikiantys. -->
+  <script>document.documentElement.classList.add("js");</script>
+
+  <!-- Šriftai: Newsreader (antraštės) + Public Sans (tekstas) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500&family=Public+Sans:wght@400;500;600&display=swap">
+
+  <!-- Ikonos: Phosphor (regular) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css">
+
+  <!-- Stiliai: žetonai → bazė → išdėstymas → komponentai -->
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+
+  <script src="js/nav.js" defer></script>
+  <script src="js/lightbox.js" defer></script>
+</head>
+<body>
+<a class="visually-hidden" href="#turinys">Pereiti prie turinio</a>
+
+<!-- ============ ANTRAŠTĖ (vienoda visuose puslapiuose) ============ -->
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a class="logo" href="index.html">Kazokinė</a>
+
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="pagrindinis-meniu">
+      <i class="ph ph-list" aria-hidden="true"></i> Meniu
+    </button>
+
+    <nav class="site-nav" id="pagrindinis-meniu" aria-label="Pagrindinis meniu">
+      <ul>
+        <li><a href="index.html">Apie sodybą</a></li>
+        <li><a href="namai.html">Namai</a></li>
+        <li><a href="galerija.html">Galerija</a></li>
+        <li><a href="kontaktai.html" aria-current="page">Kontaktai</a></li>
+      </ul>
+      <a class="site-nav__phone" href="tel:+37061515332">
+        <i class="ph ph-phone" aria-hidden="true"></i> +370 615 15332
+      </a>
+    </nav>
+  </div>
+</header>
+
+<main id="turinys">
+
+  <section class="page-intro">
+    <div class="container stack--lg">
+      <span class="eyebrow">Kontaktai</span>
+      <h1>Susisiekite su mumis</h1>
+      <p>
+        Rezervacijos priimamos telefonu ir el. paštu. Paskambinkite –
+        pasakysime laisvas datas ir tikslią kainą.
+      </p>
+    </div>
+  </section>
+
+  <section class="section section--flush">
+    <div class="container split">
+
+      <ul class="contact-list" role="list">
+        <li class="contact-item">
+          <i class="ph ph-phone" aria-hidden="true"></i>
+          <h3>Telefonai</h3>
+          <ul role="list">
+            <li><a href="tel:+37061515332">+370 615 15332</a></li>
+            <li><a href="tel:+37069977374">+370 699 77374</a></li>
+            <li><a href="tel:+37061874277">+370 618 74277</a></li>
+            <li><a href="tel:+37031045602">+370 310 45602</a> <small>vietinis</small></li>
+          </ul>
+        </li>
+        <li class="contact-item">
+          <i class="ph ph-envelope-simple" aria-hidden="true"></i>
+          <h3>El. paštas</h3>
+          <ul role="list">
+            <li><a href="mailto:info@kazokine.lt">info@kazokine.lt</a></li>
+          </ul>
+        </li>
+        <li class="contact-item">
+          <i class="ph ph-map-pin" aria-hidden="true"></i>
+          <h3>Adresas</h3>
+          <ul role="list">
+            <li>Butvydonių k., Matuizų sen., Varėnos r.</li>
+          </ul>
+        </li>
+        <li class="contact-item">
+          <i class="ph ph-compass" aria-hidden="true"></i>
+          <h3>Koordinatės</h3>
+          <ul role="list">
+            <li>54.271116, 24.815879</li>
+            <li>
+              <a class="link-arrow" href="https://www.google.com/maps/dir/?api=1&amp;destination=54.271116,24.815879" target="_blank" rel="noopener">
+                Maršrutas Google Maps <i class="ph ph-arrow-up-right" aria-hidden="true"></i>
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+
+      <div class="stack--lg">
+        <iframe
+          class="map"
+          title="Sodybos Kazokinė vieta žemėlapyje"
+          src="https://maps.google.com/maps?q=54.271116,24.815879&amp;z=13&amp;output=embed"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        <div class="note">
+          <i class="ph ph-car-simple" aria-hidden="true"></i>
+          <p>
+            <strong>Kaip atvykti.</strong> Iš Vilniaus važiuokite A4
+            magistrale Varėnos link, apie 55 km. Sodyba – ant Versekos upės
+            kranto, kraštovaizdžio draustinyje.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section section--surface" aria-labelledby="sodyba-title">
+    <div class="container">
+      <div class="section__head">
+        <span class="eyebrow">Atvykus</span>
+        <h2 id="sodyba-title">Jus pasitiks upė ir sodas</h2>
+      </div>
+      <ul class="photo-strip" role="list" data-gallery>
+        <li><a href="assets/img/pirmas-namas/fasadas-pavasari.jpg" data-lightbox><img src="assets/img/pirmas-namas/fasadas-pavasari.jpg" alt="Pirmasis namas pro žydinčias obelis" width="800" height="532" loading="lazy"></a></li>
+        <li><a href="assets/img/saslykine/pastatas.jpg" data-lightbox><img src="assets/img/saslykine/pastatas.jpg" alt="Stiklinė lauko šašlykinė" width="800" height="532" loading="lazy"></a></li>
+        <li><a href="assets/img/aplinka/sulinys.jpg" data-lightbox><img src="assets/img/aplinka/sulinys.jpg" alt="Medinis šulinys po senu medžiu" width="800" height="532" loading="lazy"></a></li>
+        <li><a href="assets/img/pirties-namas/laiptai-i-upe.jpg" data-lightbox><img src="assets/img/pirties-namas/laiptai-i-upe.jpg" alt="Laiptai nuo pirties namo link upės" width="800" height="532" loading="lazy"></a></li>
+      </ul>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ PORAŠTĖ (vienoda visuose puslapiuose) ============ -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="site-footer__grid">
+      <div class="stack">
+        <a class="logo" href="index.html">Kazokinė</a>
+        <p>
+          Kaimo turizmo sodyba ant Versekos upės kranto, kraštovaizdžio
+          draustinyje. 55 km nuo Vilniaus.
+        </p>
+      </div>
+      <div>
+        <h2>Puslapiai</h2>
+        <ul>
+          <li><a href="index.html">Apie sodybą</a></li>
+          <li><a href="namai.html">Namai</a></li>
+          <li><a href="galerija.html">Galerija</a></li>
+          <li><a href="kontaktai.html">Kontaktai</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Susisiekite</h2>
+        <ul>
+          <li><a href="tel:+37061515332">+370 615 15332</a></li>
+          <li><a href="mailto:info@kazokine.lt">info@kazokine.lt</a></li>
+          <li>Butvydonių k., Varėnos r.</li>
+        </ul>
+      </div>
+    </div>
+    <p class="site-footer__bottom">© 2026 Kazokinė – kaimo turizmo sodyba</p>
+  </div>
+</footer>
+
+</body>
+</html>
